@@ -6,3 +6,7 @@ const ListScreen = () => {
     <Text>List Screen</Text>
   )
 }
+
+const styles = StyleSheet.create({})
+
+export default ListScreen
