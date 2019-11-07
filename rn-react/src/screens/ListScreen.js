@@ -17,8 +17,9 @@ const ListScreen = () => {
 
   return (
     <FlatList 
+      keyExtractor={(option) => option.label}
       data={options}
-      renderItem={({ item }) => {
+      renderItem={({ item, index }) => {
         return <Text>{item.label}</Text>
       }}
     />
