@@ -20,12 +20,16 @@ const ListScreen = () => {
       keyExtractor={(option) => option.label}
       data={options}
       renderItem={({ item, index }) => {
-        return <Text>{item.label}</Text>
+        return <Text style={styles.textStyle}>{item.label}</Text>
       }}
     />
   )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  textStyle: {
+    marginVertical: 50
+  }
+})
 
 export default ListScreen
