@@ -2,26 +2,26 @@ import React from 'react'
 import { View, Text, StyleSheet, FlatList } from 'react-native'
 
 const ListScreen = () => {
-  const options = [
-    { label: 'option #1'},
-    { label: 'option #2'},
-    { label: 'option #3'},
-    { label: 'option #4'},
-    { label: 'option #5'},
-    { label: 'option #6'},
-    { label: 'option #7'},
-    { label: 'option #8'},
-    { label: 'option #9'},
+  const friends = [
+    { name: 'Friend 1'},
+    { name: 'Friend 2'},
+    { name: 'Friend 3'},
+    { name: 'Friend 4'},
+    { name: 'Friend 5'},
+    { name: 'Friend 6'},
+    { name: 'Friend 7'},
+    { name: 'Friend 8'},
+    { name: 'Friend 9'},
   ];
 
 
   return (
     <FlatList 
       showsVerticalScrollIndicator={false}
-      keyExtractor={(option) => option.label}
-      data={options}
+      keyExtractor={(option) => option.name}
+      data={friends}
       renderItem={({ item, index }) => {
-        return <Text style={styles.textStyle}>{item.label}</Text>
+        return <Text style={styles.textStyle}>{item.name}</Text>
       }}
     />
   )
@@ -29,7 +29,7 @@ const ListScreen = () => {
 
 const styles = StyleSheet.create({
   textStyle: {
-    marginVertical: 50
+    marginVertical: 10
   }
 })
 
