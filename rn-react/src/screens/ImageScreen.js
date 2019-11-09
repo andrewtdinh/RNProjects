@@ -7,4 +7,8 @@ const ImageScreen = () => {
   )
 }
 
+const styles = StyleSheet.create({
+  
+})
+
 export default ImageScreen;
