@@ -8,9 +8,15 @@ class CounterScreen extends React.Component {
 
   render() {
     return (
-      <View style={styles.buttonStyle}>
-        <Button title="Increase" />
-        <Button title="Decrease" />
+      <View>
+        <Button
+          title="Increase"
+          onPress={() => this.setState({counter: this.state.counter + 1})}
+        />
+        <Button 
+          title="Decrease"
+          onPress={() => this.setState({counter: this.state.counter - 1})} 
+        />
         <Text>{this.state.counter}</Text>
       </View>
     )
@@ -19,7 +25,7 @@ class CounterScreen extends React.Component {
 
 const styles = StyleSheet.create({
   buttonStyle: {
-    marginVertical: 5
+    marginVertical: 10
   }
 })
 
