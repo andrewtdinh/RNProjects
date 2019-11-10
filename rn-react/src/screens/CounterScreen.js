@@ -9,8 +9,8 @@ class CounterScreen extends React.Component {
   render() {
     return (
       <View style={styles.buttonStyle}>
-        <Button>Increase</Button>
-        <Button>Decrease</Button>
+        <Button title="Increase" />
+        <Button title="Decrease" />
         <Text>{this.state.counter}</Text>
       </View>
     )
