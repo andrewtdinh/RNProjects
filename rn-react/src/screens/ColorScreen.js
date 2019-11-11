@@ -8,10 +8,17 @@ const ColorScreen = () => {
     <View>
       <Button
         title="Generate Color"
+        onPress={() => {
+          setColors([...colors, randomRgb()])
+        }}
       />
-      <View 
-        style={{ height: 100, width: 100, backgroundColor: randomRgb()}}
-      />
+      {colors.map((color) => {
+        return (
+          <View 
+            style={{ height: 100, width: 100, backgroundColor: color}}
+          />
+        )
+      })}
     </View>
   )
 }
