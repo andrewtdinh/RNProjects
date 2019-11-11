@@ -15,6 +15,7 @@ const ColorScreen = () => {
       {colors.map((color) => {
         return (
           <View 
+            key={color}
             style={{ height: 100, width: 100, backgroundColor: color}}
           />
         )
