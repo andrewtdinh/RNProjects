@@ -10,7 +10,7 @@ const ColorScreen = () => {
         title="Generate Color"
       />
       <View 
-        style={{ height: 100, width: 100, backgroundColor: 'rgb(0, 255, 0)'}}
+        style={{ height: 100, width: 100, backgroundColor: randomRgb()}}
       />
     </View>
   )
