@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet, Button } from 'react-native'
 
-const SquareCounter = ({ color, setColor }) => {
+const SquareCounter = ({ color, setColor, colorAmount }) => {
   return (
     <View>
       <Text>{color}</Text>

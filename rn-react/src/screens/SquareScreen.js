@@ -13,14 +13,17 @@ const SquareScreen = () => {
       <SquareCounter
         color="Red"
         setColor={setRed}
+        colorAmount={red}
       />
       <SquareCounter
         color="Green"
         setColor={setGreen}
+        colorAmount={green}
       />
       <SquareCounter
         color="Blue"
         setColor={setBlue}
+        colorAmount={blue}
       />
       
       <View
