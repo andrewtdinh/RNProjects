@@ -3,9 +3,9 @@ import { StyleSheet, View, Text, Button } from 'react-native';
 import SquareCounter from '../components/SquareCounter'
 
 const SquareScreen = () => {
-  const [red, setRed] = useState(255);
-  const [green, setGreen] = useState(255);
-  const [blue, setBlue] = useState(255);
+  const [red, setRed] = useState(0);
+  const [green, setGreen] = useState(0);
+  const [blue, setBlue] = useState(0);
   const color = `rgb(${red}, ${green}, ${blue})`;
 
   return (
