@@ -7,9 +7,11 @@ const SquareCounter = ({ color, setColor, colorAmount }) => {
       <Text>{color}</Text>
       <Button 
         title={`More ${color}`}
+        onPress={() => setColor((colorAmount + 10) % 255)}
       />
       <Button 
         title={`Less ${color}`}
+        onPress={() => setColor((colorAmount - 10) % 255)}
       />
     </View>
   )
