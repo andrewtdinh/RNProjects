@@ -27,7 +27,7 @@ const SquareScreen = () => {
       />
       
       <View
-        style={{ height: 100, width: 100, backgroundColor: color }}
+        style={{ height: 150, width: 150, backgroundColor: color }}
       />
     </View>
   )
