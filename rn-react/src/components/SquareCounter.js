@@ -1,8 +1,6 @@
 import React from 'react'
 import { View, Text, StyleSheet, Button } from 'react-native'
 
-const COLOR_CHANGE_AMOUNT = 15;
-
 const SquareCounter = ({ color, setColor, colorAmount }) => {
 
   const calculateColor = (colorAmount, changeAmount) => {
