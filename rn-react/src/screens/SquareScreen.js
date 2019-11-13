@@ -1,29 +1,25 @@
-import React, { useState } from 'react';
+import React, { } from 'react';
 import { StyleSheet, View, Text, Button } from 'react-native';
 import SquareCounter from '../components/SquareCounter'
 
 const SquareScreen = () => {
-  const [red, setRed] = useState(0);
-  const [green, setGreen] = useState(0);
-  const [blue, setBlue] = useState(0);
-  const color = `rgb(${red}, ${green}, ${blue})`;
 
   return (
     <View>
       <SquareCounter
         color="Red"
-        setColor={setRed}
-        colorAmount={red}
+        onIncrease={() => }
+        onDecrease={() => }
       />
       <SquareCounter
         color="Green"
-        setColor={setGreen}
-        colorAmount={green}
+        onIncrease={() => }
+        onDecrease={() => }
       />
       <SquareCounter
         color="Blue"
-        setColor={setBlue}
-        colorAmount={blue}
+        onIncrease={() => }
+        onDecrease={() => }
       />
       
       <View
