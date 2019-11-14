@@ -26,18 +26,18 @@ const SquareScreen = () => {
     <View>
       <SquareCounter
         color="Red"
-        onIncrease={() => }
-        onDecrease={() => }
+        onIncrease={() => dispatch({colorToChange: 'red', amount: COLOR_CHANGE_AMOUNT})}
+        onDecrease={() => dispatch({ colorToChange: 'red', amount: -1 * COLOR_CHANGE_AMOUNT })}
       />
       <SquareCounter
         color="Green"
-        onIncrease={() => }
-        onDecrease={() => }
+        onIncrease={() => dispatch({ colorToChange: 'red', amount: COLOR_CHANGE_AMOUNT })}
+        onDecrease={() => dispatch({ colorToChange: 'red', amount: -1 * COLOR_CHANGE_AMOUNT })}
       />
       <SquareCounter
         color="Blue"
-        onIncrease={() => }
-        onDecrease={() => }
+        onIncrease={() => dispatch({ colorToChange: 'red', amount: COLOR_CHANGE_AMOUNT })}
+        onDecrease={() => dispatch({ colorToChange: 'red', amount: -1 * COLOR_CHANGE_AMOUNT })}
       />
       
       <View
