@@ -4,8 +4,15 @@ import SquareCounter from '../components/SquareCounter'
 
 const COLOR_CHANGE_AMOUNT = 15;
 
-const reducer = () => {
-
+const reducer = (state, action) => {
+  // state is { red: number, green: number, blue: number }
+  // action is { colorToChange: 'red' || 'green' || 'blue', amount: 15 || -15 }
+  switch (action.colorToChange) {
+    case 'red':
+    case 'green':
+    case 'blue':
+    default:
+  }
 }
 
 const SquareScreen = () => {
