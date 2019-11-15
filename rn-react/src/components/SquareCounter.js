@@ -17,4 +17,6 @@ const SquareCounter = ({ color, onIncrease, onDecrease }) => {
   )
 }
 
+const styles = StyleSheet.create({})
+
 export default SquareCounter;
