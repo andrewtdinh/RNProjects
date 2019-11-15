@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet, Button } from 'react-native'
 
-const SquareCounter = ({ color, setColor, colorAmount }) => {
+const SquareCounter = ({ color, onIncrease, onDecrease }) => {
 
   const calculateColor = (colorAmount, changeAmount) => {
     const nextAmount = colorAmount + changeAmount;
@@ -19,11 +19,11 @@ const SquareCounter = ({ color, setColor, colorAmount }) => {
       <Text>{color}</Text>
       <Button 
         title={`More ${color}`}
-        onPress={() => setColor(calculateColor(colorAmount, COLOR_CHANGE_AMOUNT))}
+        onPress={() => onIncrease()}
       />
       <Button 
         title={`Less ${color}`}
-        onPress={() => setColor(calculateColor(colorAmount, -1 * COLOR_CHANGE_AMOUNT))}
+        onPress={() => onDecrease()}
       />
     </View>
   )
