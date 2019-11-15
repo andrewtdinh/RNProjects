@@ -6,25 +6,25 @@ const COLOR_CHANGE_AMOUNT = 15;
 
 const reducer = (state, action) => {
   // state is { red: number, green: number, blue: number }
-  // action is { colorToChange: 'red' || 'green' || 'blue', amount: 15 || -15 }
+  // action is { type: 'change_red' || 'change_green' || 'change_blue', payload: 15 || -15 }
   switch (action.colorToChange) {
-    case 'red':
-      if (state.red + action.amount > 255 || state.red + action.amount < 0) {
+    case 'change_red':
+      if (state.red + action.payload > 255 || state.red + action.payload < 0) {
         return state;
       }
-      return { ...state, red: state.red + action.amount }
+      return { ...state, red: state.red + action.payload }
 
-    case 'green':
-      if (state.green + action.amount > 255 || state.green + action.amount < 0) {
+    case 'change_green':
+      if (state.green + action.payload > 255 || state.green + action.payload < 0) {
         return state;
       }
-      return { ...state, green: state.green + action.amount }
+      return { ...state, green: state.green + action.payload }
 
-    case 'blue':
-      if (state.blue + action.amount > 255 || state.blue + action.amount < 0) {
+    case 'change_blue':
+      if (state.blue + action.payload > 255 || state.blue + action.payload < 0) {
         return state;
       }
-      return { ...state, blue: state.blue + action.amount }
+      return { ...state, blue: state.blue + action.payload }
 
     default:
       return state;
