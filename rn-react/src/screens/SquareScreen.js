@@ -21,6 +21,7 @@ const reducer = (state, action) => {
 
 const SquareScreen = () => {
   const [state, dispatch] = useReducer(reducer, {red: 0, green: 0, blue: 0});
+  const color = `rgb(${state.red}, ${state.green}, ${state.blue})`
 
   return (
     <View>
