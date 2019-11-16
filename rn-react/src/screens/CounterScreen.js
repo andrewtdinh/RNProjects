@@ -25,7 +25,7 @@ const CounterScreen = () => {
         title="Decrease"
         onPress={() => dispatch({ type: 'decrement', payload: -1 })} 
       />
-      <Text>Current Counter: {state.counter}</Text>
+      <Text>Current Count: {state.counter}</Text>
     </View>
   )
 }
