@@ -9,7 +9,7 @@ const CounterScreen = () => {
       case 'increment':
         return { ...state, counter: (state.counter + action.payload) }
       case 'decrement':
-        return { ...state, counter: (state.counter + action.payload) }
+        return { ...state, counter: (state.counter - action.payload) }
       default:
         return state;
     }
@@ -24,7 +24,7 @@ const CounterScreen = () => {
       />
       <Button 
         title="Decrease"
-        onPress={() => dispatch({ type: 'decrement', payload: -1 })} 
+        onPress={() => dispatch({ type: 'decrement', payload: 1 })} 
       />
       <Text>Current Count: {state.counter}</Text>
     </View>
