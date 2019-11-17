@@ -3,6 +3,8 @@ import { StyleSheet, View, Button, Text } from 'react-native';
 
 const CounterScreen = () => {
   const reducer = (state, action ) => {
+    // state === { counter: number }
+    // action === { type === 'increment' || 'decrement', payload: 1 }
     switch(action.type) {
       case 'increment':
         return { ...state, counter: (state.counter + action.payload) }
