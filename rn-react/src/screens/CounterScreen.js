@@ -2,7 +2,6 @@ import React, { useReducer } from 'react';
 import { StyleSheet, View, Button, Text } from 'react-native';
 
 const CounterScreen = () => {
-  // const [ counter, setCounter ] = useState(0);
   const reducer = (state, action ) => {
     switch(action.type) {
       case 'increment':
