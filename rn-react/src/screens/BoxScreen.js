@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     borderColor: 'red',
     backgroundColor: 'lightgreen',
-    top: 50,
+    marginTop: 40
   },
   viewThreeStyle: {
     width: 50,
