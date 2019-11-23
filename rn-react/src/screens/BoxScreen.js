@@ -24,18 +24,21 @@ const styles = StyleSheet.create({
     height: 50,
     borderWidth: 3,
     borderColor: 'red',
+    backgroundColor: 'lightblue'
   },
   viewTwoStyle: {
     width: 50,
     height: 50,
     borderWidth: 3,
     borderColor: 'red',
+    backgroundColor: 'lightgreen'
   },
   viewThreeStyle: {
     width: 50,
     height: 50,
     borderWidth: 3,
     borderColor: 'red',
+    backgroundColor: 'lightpink'
   }
 })
 
